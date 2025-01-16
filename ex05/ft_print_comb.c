@@ -6,7 +6,7 @@
 /*   By: egiraud <egiraud@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/15 18:42:05 by egiraud           #+#    #+#             */
-/*   Updated: 2025/01/16 13:04:10 by egiraud          ###   ########.fr       */
+/*   Updated: 2025/01/16 15:54:46 by egiraud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,8 +36,6 @@ void	ft_int_putchar(int a, int b, int c)
 			ft_putchar(',');
 			ft_putchar(' ');
 		}
-		if (x == '7')
-			ft_putchar('\n');
 	}
 }
 
