@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: egiraud <egiraud@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/15 18:42:05 by egiraud           #+#    #+#             */
-/*   Updated: 2025/01/16 13:04:10 by egiraud          ###   ########.fr       */
+/*   Created: 2025/01/16 10:33:44 by egiraud           #+#    #+#             */
+/*   Updated: 2025/01/16 13:01:55 by egiraud          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,50 +17,31 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_int_putchar(int a, int b, int c)
-{
-	char	x;
-	char	y;
-	char	z;
-
-	x = a + '0';
-	y = b + '0';
-	z = c + '0';
-	if (x != y && x != z && y != z)
-	{
-		ft_putchar(x);
-		ft_putchar(y);
-		ft_putchar(z);
-		if (x != '7')
-		{
-			ft_putchar(',');
-			ft_putchar(' ');
-		}
-		if (x == '7')
-			ft_putchar('\n');
-	}
-}
-
-void	ft_print_comb(void)
+void	ft_print_comb2(void)
 {
 	int	a;
 	int	b;
-	int	c;
 
 	a = 0;
-	while (a <= 7)
+	b = 1;
+	while (a <= 98 && a < b)
 	{
-		b = a + 1;
-		while (b <= 8)
+		while (b <= 99)
 		{
-			c = b + 1;
-			while (c <= 9)
+			ft_putchar(a / 10 + '0');
+			ft_putchar(a % 10 + '0');
+			ft_putchar(' ');
+			ft_putchar(b / 10 + '0');
+			ft_putchar(b % 10 + '0');
+			if (a < 98)
 			{
-				ft_int_putchar(a, b, c);
-				c++;
+				write(1, &", ", 2);
 			}
-			b++;
+			if (a == 98)
+				ft_putchar('\n');
+			b ++;
 		}
-		a++;
+		a ++;
+		b = a + 1;
 	}
 }
