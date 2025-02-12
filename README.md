@@ -5,4 +5,4 @@ Ce repo est a l'usage unique d'exemple de solution à certains exos de la piscin
 
 Pour plus de simplicité chaque fonction sera accompagnée d'un fichier main qui devra etre compilé avec le fichier contenant la fonction.\
 Pour rappel la moulinette compile avec certains flags qu'il faut donc utiliser pour tester son code.\
-Exemple de compilation : '''cc -Wall -Wextra -Werror nomdufichieracompiler.c main.c''' ou '''cc -Wall -Wextra -Werror *.c''' si le dossier ne contient que les fichiers a compiler. \
+Exemple de compilation : ```cc -Wall -Wextra -Werror nomdufichieracompiler.c main.c``` ou ```cc -Wall -Wextra -Werror *.c``` si le dossier ne contient que les fichiers a compiler. \
