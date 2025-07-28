@@ -17,3 +17,5 @@ Pour rappel, la moulinette compile avec certains flags qu'il faut donc utiliser 
 Exemple de compilation : ```cc -Wall -Wextra -Werror nomdufichieracompiler.c main.c``` ou ```cc -Wall -Wextra -Werror *.c``` si le dossier ne contient que les fichiers a compiler.  
 Je vous conseille de créer un alias dans votre `zshrc` situé dans le home. Ouvrez avec `vim ~/.zshrc` et rajoutez `alias="cc -Wall -Wextra -Werror"`.  
 
+Certains exercices sont annotés "_KO" ces exercices sont proches ou très proche de la solution mais n'ont pas passé la moulinette, je les laisse non corrigés car intéressants malgré qu'ils n'aient pas passé la sainte moulinette.
+
