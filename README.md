@@ -1,4 +1,10 @@
-# 42piscine
+<h1 align="center">
+  Piscine
+</h1>
+
+<p align="center">
+	Tous les exercices que j'ai réussi durant la piscine de 42Paris
+</p>
 
 ## C'EST QUOI ?
 Le repo a pour objectif de garder une trace des projets rendus pendant la piscine de l'hiver 2025 à l'école 42.\
